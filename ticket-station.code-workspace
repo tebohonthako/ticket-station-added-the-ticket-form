@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../Functionality/01. Event Listing"
+		},
+		{
+			"path": "../Functionality/02.Ticket Selection and Booking Process"
+		},
+		{
+			"path": "../Functionality/03. Object-Oriented Design"
+		}
+	],
+	"settings": {
+		"liveServer.settings.port": 5501
+	}
+}

@@ -1026,3 +1026,53 @@ strong {
   font-family: 'Indie Flower', cursive;
 }
 
+/* A L E R T   M E S  S A G E   T O  U S E R  */
+.message {
+  text-align: center;
+  color: green;
+  font-weight: 700;
+  animation: buttons .3s linear;
+  margin-top: 1rem;
+  
+}
+/* A L E R T   M E S  S A G E   T O  U S E R  */
+.danger {
+  text-align: center;
+  color: red;
+  font-weight: 700;
+  animation: buttons .3s linear;
+  display: none;
+  margin-top: 1rem;
+  display: none;
+}
+
+@keyframes buttons {
+  0%{
+    transform: scale(0.1);
+  }
+  50%{
+    transform: scale(0.5);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+
+#submit {
+  padding: 0.5rem;
+  margin-top: 1rem;
+}
+
+
+.welcomeback {
+  font-size: 4rem;
+  margin-top: 4.5rem;
+}
+.welcomep {
+  text-align: center;
+  color: whitesmoke;
+}
+.home {
+  text-align: center;
+  margin-top: 1rem;
+}
