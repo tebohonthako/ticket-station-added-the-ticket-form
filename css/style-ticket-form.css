@@ -1,95 +1,126 @@
 body {
   background-color: black;
-  
 }
 
-
 .modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.5);
-   
-  }
-  
-  .modal-content {
-    background-color: #fefefe;
-    margin: 15% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 300px;
-    
-  }
-  
-  .close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-  }
-  
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 300px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.event-card {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background: #7a91a7;
+  border-radius: 1rem;
+  max-width: 50%;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  padding: 4rem;
+  text-align: center;
+  color: aliceblue;
+  font-family: 'Ysabeau SC', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.event-card:hover {
+  cursor: grab;
+  color: black;
+  transition: all 2ms ease-in-out;
+  background: linear-gradient(
+    109.7deg,
+    rgb(202, 50, 50) 5.7%,
+    rgb(252, 195, 12) 92.4%
+  );
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-family: 'Ysabeau SC', sans-serif;
+  margin-top: 10rem;
+  color: aliceblue;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  font-family: 'Ysabeau SC', sans-serif;
+  margin-top: 0.5rem;
+}
+
+button {
+  display: block;
+  margin: 10px auto;
+  border-radius: 1rem;
+  margin-top: 1rem;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+button:hover {
+  background: olivedrab;
+  color: whitesmoke;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
   .event-card {
-    margin-bottom: 20px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    background: #7A91A7;
-    border-radius: 1rem;
-    max-width: 50%;
-    display: block;
-    margin: 0 auto;
-    margin-bottom: 1rem;
-    padding: 4rem;
-    text-align: center;
-    color: aliceblue;
-    font-family: 'Ysabeau SC', sans-serif;
-    font-size: 1.5rem;
-    font-weight: 700;
-  }
-  .event-card:hover {
-    cursor: grab;
-    color: black;
-    transition: all 2ms ease-in-out;
-    background: linear-gradient(109.7deg, rgb(202, 50, 50) 5.7%, rgb(252, 195, 12) 92.4%);
-  }
-  
-  h1 {
-    text-align: center;
-    font-size: 2.5rem;
-    font-family: 'Ysabeau SC', sans-serif;
-    margin-top: 10rem;
-    color: aliceblue;
+    max-width: 80%;
+    padding: 2rem;
   }
 
-  h2  {
-    text-align: center;
+  h1 {
+    margin-top: 5rem;
     font-size: 2rem;
-    font-family: 'Ysabeau SC', sans-serif;
-    margin-top: 0.5rem;
   }
-  
-  button {
-    display: block;
-    margin: 10px auto;
-    border-radius: 1rem;
-    margin-top: 1rem;
+}
+
+@media screen and (max-width: 480px) {
+  .modal-content {
+    width: 90%;
+  }
+
+  .event-card {
+    max-width: 90%;
     padding: 1rem;
-    font-size: 1rem;
-    font-weight: bold;
+    font-size: 1.2rem;
   }
-  button:hover {
-    background: olivedrab;
-    color: whitesmoke;
+
+  h1 {
+    margin-top: 3rem;
+    font-size: 1.5rem;
   }
-  
+}
